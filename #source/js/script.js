@@ -62,7 +62,7 @@ $(window).scroll(function() {
 
 // Плавная прокрутка по клику на ссылку меню навигации
 $(document).ready(function () {
-	$('a[href="#home"].header-menu__link').addClass('active'); // Первая ссылка меню будет выделена при открытии страницы в браузере
+	// $('a[href="#home"].header-menu__link').addClass('active'); // Первая ссылка меню будет выделена при открытии страницы в браузере
 	$('a[href^="#"].header-menu__link').click(function() {
 		// var offset = $('.nav').innerHeight(); // Присваиваем переменной высоту блока меню навигации
 		// $(this).addClass('active');
@@ -72,8 +72,8 @@ $(document).ready(function () {
 			scrollTop: $(target).offset().top - 0
 			// scrollTop: $(target).offset().top - offset // С помощью переменной offset делаем отступ при скролле на высоту меню навигации, чтобы меню не перекрывало вверхнюю часть блока
 		}, 500);
-		$('a[href^="#"].header-menu__link').removeClass('active'); // удаляем класс .active
-		$(this).addClass('active'); // добавляем класс .active
+		// $('a[href^="#"].header-menu__link').removeClass('active'); // удаляем класс .active
+		// $(this).addClass('active'); // добавляем класс .active
 		// $(this).removeClass('active'); // добавляем класс .active
 		return false;
 	})

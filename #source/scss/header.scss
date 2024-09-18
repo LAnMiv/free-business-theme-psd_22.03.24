@@ -160,10 +160,10 @@ $height-header:92px;
 		color: #fff;
 		background-color: #ffbb42;
 	}
-	&.active {
-		color: #fff;
-		background-color: #ffbb42;
-	}
+	// &.active {
+	// 	color: #fff;
+	// 	background-color: #ffbb42;
+	// }
 	@media (max-width:$md2+px) {
 		padding: 0 10px;
 		line-height: 30px;

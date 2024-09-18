@@ -352,10 +352,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background-color: #ffbb42;
 }
-.header-menu__link.active {
-  color: #fff;
-  background-color: #ffbb42;
-}
 @media (max-width: 992.98px) {
   .header-menu__link {
     padding: 0 10px;
