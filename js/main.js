@@ -1,3 +1,5 @@
+alert("Message");
+
 
 //Adaptive functions
 $(window).resize(function(event) {
