@@ -1,0 +1,22 @@
+.footer {
+	background-color: #709dca;
+}
+.footer__content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 45px;
+}
+.footer__text {
+	font-family: 'Open Sans';
+	font-size: 13px;
+	line-height: 1.5;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	@media (max-width:$md3+px) {
+		span {
+			display: block;
+		}
+	}
+}

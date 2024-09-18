@@ -1,0 +1,111 @@
+//<FORM (a.f+tab)>================================================
+.form{}
+.form-row{@include flexbox();margin: 0px -15px;}
+.form-column{padding: 0px 15px;}
+.form-input{}
+.form-button{}
+//</FORM> =========================================================
+
+//<BUTTONS (a.btn+tab)> =========================================================
+.btn {
+	height: 46px;
+	line-height: 46px;
+	background-color: #ffbb42;
+	display: inline-block;
+	padding: 0px 15px;
+	font-family: 'Lato';
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;	
+	&--transparent{
+		border: 1px solid #e7ad48;
+		background-color: transparent;}
+	&:hover{
+		background-color: #ffcb71;
+	}
+	&:fw{width: 100%;}
+}
+//</BUTTONS> =========================================================
+
+//<SELECT (sel+tab) (неполный код!!!)> =========================================================
+.select-block{position: relative;}
+.select__label{z-index: 2;position: absolute;top: -8px;background-color: #f7f7f7;padding: 0 5px;color: #979797;font-weight: 600;font-size: 13px;line-height: 20px;} // Строка кода дописана не до конца
+.select{position: relative;cursor: pointer;
+	.select-title{z-index: 1;width: 100%;
+		height: 55px;
+		border: 1px solid #dedede;
+		position: relative;
+		background-color: #fff;
+	}
+	.select-title__arrow{position: absolute;top: 0;
+		right: 0;width: 45px;height: 100%;
+		background: url('../img/icons/select-arrow.svg') center no-repeat;
+	}
+	.select-title__value{
+		color: #000;
+		font-weight: 700;
+		font-size: 18px;line-height: 53px;
+		display: block;overflow: hidden;
+		padding: 0 45px 25px;white-space: nowrap;text-transform: none;text-overflow: ellipsis;
+	}
+	.select-options{
+		position: absolute;z-index: 10;
+		top: 45px;display: none;overflow: hidden;
+		min-width: 100%;
+		background-color: #fff;
+	}
+	// Нет продолжения кода
+}
+//</SELECT> =========================================================
+
+//<INPUT (inp+tab)> =========================================================
+input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.input{
+	border-radius: 0 !important;
+	width: 100%;
+	display: block;
+	padding: 0px 15px 0px 40px;
+	height: 46px;
+	background-color: #fff;
+	color: #a9a9a9;
+	font-size: 13px;
+	&.focus{}
+	&.err{}
+}
+textarea.input{
+	resize:none;
+	height: 100px;
+	padding: 10px 18px;
+}
+//</INPUT> =========================================================
+
+//<CHECK (chk+tab)> =========================================================
+.check{position: relative;padding-left: 25px;color: #5f5f5f;line-height: 18;cursor: pointer;
+	input{display: none;}
+	&:before{content: '';
+		left: 0;
+		top: 0;
+		width: 18px;height: 18px;
+		border: 1px solid #a3a3a3;
+		position: absolute;
+	}
+	&.active{
+		&:before{
+			background: url('../img/icons/check.png') center no-repeat;
+		}
+	}
+}
+//</CHECK> =========================================================
+
+//<OPTIONS (opt+tab) (неполный код!!!)> =========================================================
+.option{position: relative;cursor: pointer;padding-left: 25px;line-height: 16px;margin-bottom: 10px;font-size: 15px;
+	&:last-child{margin-bottom: 0;}
+	input{display: none;}
+	&:before{position: absolute;left: 0;top: 0;width: 16px;height: 16px;content: '';border: 1px solid #7f7f7f;border-radius: 0;} // нет окончания строки кода
+	&.active{
+		&:before{background: url('../img/icons/options.png') center no-repeat;}
+	}
+}
+//</OPTIONS> =========================================================
