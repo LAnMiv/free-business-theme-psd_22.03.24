@@ -1,5 +1,3 @@
-alert("Message");
-
 
 //Adaptive functions
 $(window).resize(function(event) {
@@ -147,6 +145,8 @@ $(document).ready(function () {
 	$('a[href="#home"].header-menu__link').addClass('active'); // Первая ссылка меню будет выделена при открытии страницы в браузере
 	$('a[href^="#"].header-menu__link').click(function() {
 		// var offset = $('.nav').innerHeight(); // Присваиваем переменной высоту блока меню навигации
+		// $(this).addClass('active');
+		$('.menu__burger-checkbox').prop('checked', false);
 		var target = $(this).attr('href'); // присваиваем переменной target атрибут нажатой сслыки
 		$('html, body').animate({
 			scrollTop: $(target).offset().top - 0
@@ -154,6 +154,7 @@ $(document).ready(function () {
 		}, 500);
 		$('a[href^="#"].header-menu__link').removeClass('active'); // удаляем класс .active
 		$(this).addClass('active'); // добавляем класс .active
+		// $(this).removeClass('active'); // добавляем класс .active
 		return false;
 	})
 })
